@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #c36fb7; /* Deep purple or purple*/
+    --secondary-color: #f3b2e9; /* Soft purple */
+    --tertiary-color: #e1bee7; /* Light lavender */
+    --button-padding: 16px 40px;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
+    --letter-spacing: 2px;
+    --glow-duration: 2s;
+    --transition-duration: 0.4s;
+  }
+
+
+
+
+
+.anime-button {
+    display: inline-block;
+    padding: var(--button-padding);
+    font-size: var(--font-size);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--tertiary-color));
+    border-radius: 50px;
+    box-shadow: 0 0 15px var(--secondary-color), 0 0 30px var(--primary-color), 0 0 60px var(--tertiary-color);
+    animation: smoothGlow var(--glow-duration) infinite ease-in-out;
+    transition: all var(--transition-duration) ease-in-out;
+  }
+  
+  .anime-button:hover {
+    background: linear-gradient(45deg, var(--tertiary-color), var(--secondary-color), var(--primary-color));
+    box-shadow: 0 0 20px var(--tertiary-color), 0 0 40px var(--secondary-color), 0 0 80px var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  .anime-button:focus {
+    outline: none;
+    box-shadow: 0 0 20px var(--tertiary-color), 0 0 40px var(--secondary-color), 0 0 80px var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  @keyframes smoothGlow {
+    0%, 100% {
+      box-shadow: 0 0 15px var(--secondary-color), 0 0 30px var(--primary-color), 0 0 60px var(--tertiary-color);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--tertiary-color), 0 0 40px var(--secondary-color), 0 0 80px var(--primary-color);
+    }
+  }
