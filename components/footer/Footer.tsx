@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <button className="back-to-top" onClick={scrollToTop}>
-        ↑ Back to Top
+        ↑
       </button>
       <div className="footer-content">
         <div className="footer-section">
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="footer-section">
           <h4>Contact</h4>
-          <p>Email: info@pinkcakeshop.com</p>
+          <p>Email: cbcakeparlour@gmail.com</p>
           <p>Phone: +44 123 456 789</p>
         </div>
         <div className="footer-section">
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Pink Cake Shop. All rights reserved.</p>
+        <p>&copy; 2024 Catherine Braidy. All rights reserved.</p>
       </div>
     </footer>
   );

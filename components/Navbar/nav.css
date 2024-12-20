@@ -14,19 +14,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
     max-width: 1200px;
     position: relative;
     z-index: 5;
+    
+  }
+
+  .navbar-actions {
+    display: flex; /* Align items side-by-side */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Add space between toggle and cart */
+    gap: 1rem; /* Optional: Adjust spacing */
+  }
+
+  .logo-image {
+    max-width: 120px; /* Adjust width for mobile */
+    height: auto; /* Maintain aspect ratio */
+    transform: scale(1.6);
   }
   
-  .navbar-logo {
+  /* .navbar-logo {
     color: rgb(208, 59, 171);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-  }
+  } */
+
+
   
   .navbar-toggle {
     background: none;
@@ -37,6 +53,7 @@
     display: block;
     z-index: 5;
     position: relative;
+    font-family: "Oswald", serif;
   }
   
   /* Navbar Menu */
@@ -47,6 +64,7 @@
     width: 100%;
     height: 100%;
     list-style: none;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,13 +87,19 @@
     padding: 1rem;
     width: 100%;
     text-align: center;
+    
   }
   
   .navbar-link {
     color: rgb(136, 7, 102);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.8rem;
     transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05cap;
+    font-family: "Oswald", serif;
   }
   
   .navbar-link:hover {
@@ -86,6 +110,7 @@
   @media (min-width: 768px) {
     .navbar {
       flex-direction: row;
+      height: 130px;
     }
   
     .navbar-toggle {
@@ -103,10 +128,71 @@
       height: auto;
       width: auto;
     }
+
+    .navbar-link{
+      font-size: 1.2rem;
+    }
   
     .navbar-item {
       padding: 0 1rem;
       width: auto;
     }
+
+    .logo-image {
+      max-width: 170px; /* Default desktop size */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .logo-image {
+      display: block; /* Removes inline spacing issues */
+      width: 100%; /* Ensures responsive scaling */
+      height: auto; /* Maintains aspect ratio */
+      transform: scale(1.3); /* Initial scale */
+      
+    }
+    
+    
+    
   }
   
+
+  @media (min-width: 1800px) {
+    .navbar {
+      flex-direction: row;
+      height: 200px;
+      justify-content: space-around;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-link{
+      font-size: 1.7rem;
+      font-family: "Oswald", serif;
+    
+    }
+  
+
+    .navbar-item {
+      padding: 0 1rem;
+      width: auto;
+      
+    }
+
+    .logo-image {
+      max-width: 170px; /* Default desktop size */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .logo-image {
+      display: block; /* Removes inline spacing issues */
+      width: 100%; /* Ensures responsive scaling */
+      height: auto; /* Maintains aspect ratio */
+      transform: scale(2.2); /* Initial scale */
+      
+    }
+    
+    
+    
+  }

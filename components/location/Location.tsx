@@ -24,8 +24,9 @@ export default function Location() {
           <div className='right-part'>
             <Image src='/shop.jpg'
                     alt='shop imgage'
-                    width={400}
-                    height={400}
+                    width={550}
+                    height={450}
+                    className='shop-img'
             />      
           </div>
          

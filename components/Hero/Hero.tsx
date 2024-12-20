@@ -18,10 +18,12 @@ export default function Hero() {
 
         <div className="hero-img">
           <Image
-            src="/hero.jpg"
-            width={450}
-            height={500}
+            src="/hero2.jpg"
             alt="hero img"
+            priority={true}
+            fill // Ensures the image fills the container without distortion
+            className="hero-cake"
+            sizes="(max-width: 768px) 100vw, 50vw" 
           />
         </div>
       </div>

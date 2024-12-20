@@ -10,7 +10,7 @@ export default function Sketch() {
           alt="Sketch Image" 
           width={700} 
           height={500} 
-          layout="responsive" 
+
         />
       </div>
     </>

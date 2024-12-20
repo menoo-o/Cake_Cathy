@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #c36fb7; /* Deep purple or purple*/
-    --secondary-color: #f3b2e9; /* Soft purple */
+    --primary-color: #d58d75; /* Deep purple or purple*/
+    --secondary-color: #c48478; /* Soft purple */
     --tertiary-color: #e1bee7; /* Light lavender */
     --button-padding: 16px 40px;
-    --font-family: 'Poppins', sans-serif;
+    --font-family: 'Oswald', sans-serif;
     --font-size: 18px;
-    --letter-spacing: 2px;
+    --letter-spacing: 3px;
     --glow-duration: 2s;
     --transition-duration: 0.4s;
   }
@@ -17,6 +17,7 @@
 .anime-button {
     display: inline-block;
     padding: var(--button-padding);
+    font-family: 'Oswald', serif;
     font-size: var(--font-size);
     color: #fff;
     text-transform: uppercase;
@@ -48,5 +49,12 @@
     }
     50% {
       box-shadow: 0 0 20px var(--tertiary-color), 0 0 40px var(--secondary-color), 0 0 80px var(--primary-color);
+    }
+  }
+
+  @media (max-width:760px){
+    .anime-button{
+      margin-top: 10px;
+      padding: 10px 25px;
     }
   }

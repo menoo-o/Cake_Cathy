@@ -7,7 +7,7 @@ export default function Offering() {
     {
     //   ready to go cakes
         id: 1,
-        src: '/cakes.png',
+        src: '/offerings/ready_cake.jpg',
         title: 'Ready to go cakes',
         description: 'Try our ready-to-go cakes',
     },
@@ -15,34 +15,19 @@ export default function Offering() {
     {
         // custom cakes
         id: 2,
-        src: '/cake1.png',
-        title: 'Custom Cakes',
-        description: 'Explore our Made For You range to create a memory with us through a custom cake.',
+        src: '/offerings/cake_pops.jpg',
+        title: 'Delicious Treats',
+        description: 'Bite-sized bliss! Explore our variety of sweet treats',
     },
 
     {
         // cupcakes
         id: 3,
-        src: '/cupcakes.png',
-        title: 'Cupcakes',
-        description: 'Delicious cupcakes in various flavors',
+        src: '/offerings/custom.webp',
+        title: 'Custom Cakes',
+        description: "Dream it, we'll bake it!",
     },
 
-    {
-        // brownies
-        id: 4,
-        src: '/Deli.png',
-        title: 'Cupcakes',
-        description: 'Delicious cupcakes in various flavors',
-      },
-
-    {
-        // cakepops
-        id: 5,
-        src: '/cupcakes.png',
-        title: 'Cupcakes',
-        description: 'Delicious cupcakes in various flavors',
-      },
 
   ];
 
@@ -56,8 +41,8 @@ export default function Offering() {
               <Image 
                 src={offering.src}
                 alt={offering.title}
-                width={300}
-                height={300}
+                width={400}
+                height={400}
               />
               <h3>{offering.title}</h3>
               <p>{offering.description}</p>

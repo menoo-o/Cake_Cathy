@@ -1,6 +1,7 @@
 main{
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
+
 }
 
   
@@ -27,7 +28,7 @@ main{
   }
 
   .left-part p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.5;
     margin-bottom: 1.5rem;
@@ -36,18 +37,38 @@ main{
   .left-part p strong {
     color: #ff6b81; /* Highlighted timing in light pink */
   }
+
+  .left-part h3{
+    font-family: 'Oswald', serif;
+    font-weight: 500;
+    letter-spacing: 0.1cap;
+    font-size: 3rem;
+  }
   
+  .shop-img{
+    transition: transform 0.5s ease-in-out;
+  }
   
+  .shop-img:hover{
+    transform: scale(1.056);
+  }
 
 
 
   
   /* Desktop Styling */
   @media (min-width: 768px) {
+
+    main{
+      margin-top: 3rem;
+      background-color: rgb(255, 255, 255);
+    }
     .location-container {
       flex-direction: row; /* Side-by-side layout for desktop */
       align-items: flex-start;
       gap: 4rem;
+      margin-top: 3rem;
+      
     }
   
     .left-part {
