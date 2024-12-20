@@ -1,0 +1,35 @@
+/* Sketch Container */
+.sketch-container {
+    padding: 1rem;
+    text-align: center;
+  
+    background-color: #fff; /* White background */
+  }
+  
+  .sketch-container img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Mobile-first styling */
+  @media (max-width: 768px) {
+    .sketch-container {
+      padding: 1rem 0.5rem;
+    }
+  
+    .sketch-container img {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  
+  /* Desktop and larger screen styling */
+  @media (min-width: 768px) {
+    .sketch-container {
+      padding: 2rem 1rem;
+    }
+  
+    .sketch-container img {
+      width: 80%; /* Reduced width for larger screens */
+      margin: 0 auto;
+    }
+  }

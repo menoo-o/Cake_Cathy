@@ -1,0 +1,69 @@
+/* General Reset */
+
+  
+  /* Offering Container */
+  .offering-container {
+    padding: 1.5rem;
+    height: 100vh;
+    text-align: center;
+    background-color: #fff5f7; /* Light pink background */
+  }
+  
+  .offering-container .heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d81b60; /* Dark pink */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Inside Container (Grid) */
+  .inside-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: Single column */
+    gap: 1.5rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .card img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #d81b60; /* Dark pink */
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #333333;
+  }
+  
+  /* Tablet and Desktop Grid */
+  @media (min-width: 768px) {
+    .inside-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .inside-container {
+      grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+      gap: 2rem;
+    }
+  }
+  

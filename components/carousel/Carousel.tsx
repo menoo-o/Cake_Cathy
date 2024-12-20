@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import './carousel.css';
+import Image from 'next/image';
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,9 +64,15 @@ export default function Carousel() {
             >
                 {images.map((image, index) => (
                 <div className="carousel-slide" key={index}>
-                    <img src={image.src} alt={`Slide ${index}`} />
-                    <p>{image.text}</p>
-            </div>
+                <Image 
+                  src={image.src} 
+                  alt={`Slide ${index}`} 
+                  width={300} 
+                  height={300} 
+                  priority={index === 0} /* Ensures the first image loads quickly */
+                />
+                <p>{image.text}</p>
+              </div>
             ))}
             </div>
         </div>
@@ -77,9 +84,14 @@ export default function Carousel() {
     <div className="desktop-look">
             {images.map((image, index) => (
             <div className="grid-item" key={index}>
-                <img src={image.src} alt={`Grid Image ${index}`} />
-                <p>{image.text}</p>
-            </div>
+            <Image 
+              src={image.src} 
+              alt={`Grid Image ${index}`} 
+              width={300} 
+              height={300} 
+            />
+            <p>{image.text}</p>
+          </div>
             ))}
         </div>
     </section>

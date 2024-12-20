@@ -51,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(226, 141, 193, 0.9);
     opacity: 0;
     visibility: hidden;
     transform: scale(0.95);

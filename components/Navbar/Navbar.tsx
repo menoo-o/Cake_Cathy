@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import './nav.css';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,15 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link href="/" className="navbar-logo">
-          Logo
+          <Image 
+            src='/logo2.png'
+            alt='logo'
+            width={170}
+            height={140}
+          />
+
+
+          
         </Link>
         <button 
           className="navbar-toggle" 
