@@ -1,3 +1,17 @@
+:root {
+    --primary-color: #9a1b89; /* Deep purple or purple*/
+    --secondary-color: #bc47aa; /* Soft purple */
+    --tertiary-color: #e1bee7; /* Light lavender */
+    --button-padding: 16px 40px;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
+    --letter-spacing: 2px;
+    --glow-duration: 2s;
+    --transition-duration: 0.4s;
+  }
+
+
+
 /* Hero Container */
 .hero-container {
     position: relative;

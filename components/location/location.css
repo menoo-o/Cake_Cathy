@@ -1,0 +1,65 @@
+main{
+    background-color: white;
+    width: 100%;
+}
+
+  
+  /* Container Styling */
+  .location-container {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically on mobile */
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 2rem;
+
+ 
+  }
+  
+  .left-part {
+    text-align: center; /* Center text for mobile */
+  }
+  
+
+  /* Left Section */
+  .right-part {
+    text-align: center;
+  }
+
+  .left-part p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .left-part p strong {
+    color: #ff6b81; /* Highlighted timing in light pink */
+  }
+  
+  
+
+
+
+  
+  /* Desktop Styling */
+  @media (min-width: 768px) {
+    .location-container {
+      flex-direction: row; /* Side-by-side layout for desktop */
+      align-items: flex-start;
+      gap: 4rem;
+    }
+  
+    .left-part {
+      flex: 1;
+      text-align: left; /* Align text to the left for desktop */
+    }
+  
+    .right-part {
+      flex: 1;
+      text-align: left; /* Align form to the left */
+    }
+  
+  
+  }
+  
